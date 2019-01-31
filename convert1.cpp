@@ -8,7 +8,7 @@ Now you have to help tony for resting watch time because nebula can't reset it w
 
 Note: Output will be in 24-hr format.
 
-Sample: Test Case
+Sample: Test Case 1
 
 07:45:02PM
 21:45:02
