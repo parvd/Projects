@@ -27,19 +27,20 @@ void convert(string str)
 	int h1 = (int)str[1] - '0';
 	int h2 = (int)str[0] - '0';
 	int hh = (h2 * 10 + h1 % 10);
+	//cout<<"hh="<<hh<<endl;
 
 	// If time is in "AM"
 	if (str[8] == 'A')
 	{
-	if ((hh) == 12)
+	if (hh == 12)
 		{
-		    hh=00;
+		    hh=0;
 		}
 
 	}
 
 	// If time is in "PM"
-	else
+	else if(str[8] == 'P')
 	{
 		if (hh == 12)
 		{
@@ -54,19 +55,33 @@ void convert(string str)
 	int r=hh+2;
 	if(r>24)  //if it exceed 24hr
     {
-        int x=x-24;
-        cout<<x;
+        int x=r-24;
+        cout<<"0"<<x;
         for (int i=2; i <= 7; i++)
 				cout << str[i];
+
+     cout<<endl;
     }
     else
     {
-        cout<<r;
+
+        if(r>10)
+        {
+            cout<<r;
+            for (int i=2; i <= 7; i++)
+				cout << str[i];
+
+        cout<<endl;
+       }
+    else
+{
+        cout<<"0"<<r;
         for (int i=2; i <= 7; i++)
 				cout << str[i];
 
         cout<<endl;
-    }
+}
+}
 }
 
 int main()
