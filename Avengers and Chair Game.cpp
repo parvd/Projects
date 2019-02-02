@@ -1,10 +1,10 @@
 /*
 All the avengers and Thanos Army have been to gather  at planet X for fight.At last fight
 has started.All avenegrs are giving there best to fight but they are loosing against Mighty Thanos army.
-So, Tony gave proposal to thanos that if he lose the chair game then all avengers will surrender and give to them
-all infinity stones and thor's Storm-breaker.
+So, Tony gave proposal to thanos that if he lose the chair game then all avengers will surrender and give 
+all infinity stones and thor's Storm-breaker too.
 
-Chair game contains N chair formed in shape of circle and player have to sit on them.Each have to break the chair of
+Chair game contains N chair formed in shape of circle and player have to sit on them.Each player has to break the chair of
 player sitting next to him. i.e player1 has to break the chair of player2 and then player2 loses the game and
 turn given to the next player in sequence.
 
