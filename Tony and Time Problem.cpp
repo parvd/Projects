@@ -53,7 +53,7 @@ void convert(string str)
 	}
 	//cout<<"\n";
 	int r=hh+2;
-	if(r>24)  //if it exceed 24hr
+	if(r>=24)  //if it exceed 24hr
     {
         int x=r-24;
         cout<<"0"<<x;
