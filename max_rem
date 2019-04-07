@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+long long int a[100009];
+using namespace std;
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		long long b,n;
+		cin>>n;
+	     for(int i=0;i<n;i++)
+	     cin>>a[i];
+	     
+	     sort(a, a+n, greater<int>()); 
+	     
+	//	for(int i=0;i<n;i++)
+	//	cout<<a[i]<<" ";
+		long long int max_1=a[0],max_2=a[1];
+	//	cout<<"max1="<<max_1<<" "<<"max2="<<max_2<<endl;
+		if(max_1==max_2)
+		{
+			for(int i=0;i<n;i++)
+		{
+	          if(max_2>a[i])
+	          {
+	          	max_2=a[i];
+	          	break;
+			  }
+		}
+	//	cout<<"part2"<<"max1="<<max_1<<" "<<"max2="<<max_2<<endl;
+		}
+	//	cout<<"ans=";
+		cout<<max_2%max_1<<endl;
+}
+}
